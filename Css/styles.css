@@ -6,7 +6,7 @@ header {
 
 header img {
     width: 121px;
-    padding: 30px;
+    padding:30px;
     height: 79px;
 }
 
@@ -36,5 +36,79 @@ header nav ul li:hover a {
     color:blue;
 }
 body {
-    margin:0;
+    margin:0px;
+}
+.entête {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.formulaire {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.box-filtres {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hebergements-and-populaires {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+form{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:flex-start;
+}
+.search_icon{
+    background-color: #F2F2F2;
+    padding: 10px 10px 10px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px #F2F2F2 solid;
+}
+.mots-rechercher{
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    border: 2px #F2F2F2 solid;
+    font-weight: bold;
+}
+.bouton{
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    border: 2px #0065fc solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065fc;
+    color: white;
+}
+.box-filtres{
+    align-items: center;
+    display:flex;
+}
+.modele-de-filtre{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.mot-filtre{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.filtre-and-icone{
+    margin-right: 15px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 25px;
+}
+.filtre-and-icone:hover{
+    background-color:#DEEBFF;
+    color: #F2F2F2;
+    border-color:#D9D9D9
+}
+.filter_icon{
+    color: #0065fc;
+    border-radius: 18px;
+    padding: 15px 10px 15px 19px;
+}
+.mot-span {
+    padding-right: 19px;
 }
