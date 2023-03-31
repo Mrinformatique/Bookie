@@ -1,5 +1,9 @@
+html {
+    max-width: 1440px;
+    margin: auto;
+}
+
 body {
-    margin:0px;
     font-family:"raleway",sans-serif;
 }
 header {
@@ -11,6 +15,7 @@ header img {
     width: 121px;
     padding:30px;
     height: 79px;
+    object-fit: contain;
 }
 
 header nav ul {
@@ -137,6 +142,7 @@ color: black;
 }
 .card-notes {
     width: auto;
+    height: auto;
 }
 #bloc-hebergements{
     border-radius: 20px;
@@ -156,11 +162,10 @@ color: black;
 .hotel-card{
     flex-direction: column;
     width: 28%;
-    height: 220px;
     border: 4px white solid;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     box-shadow: 0px 0px 7px #C1C1C1;
 }
 .hotel-image{
@@ -174,15 +179,16 @@ color: black;
     background-color: white;
     border-top-left-radius: 15px;
     width: 100%;
-    height: 30%;
 }
 .hotel-titre-card{
-    margin: 0px 0px 0px 0px;
+    margin:0%;
     font-size: 90%;
 }
-.hotel_prix{
-    margin: 5px 0px 5px 0px;
+.hotel_prix flex{
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 80%;
+    display: flex;
 }
 #bloc-populaires{
     border-radius: 20px;
@@ -254,4 +260,79 @@ color: black;
 }
 .flex{
     display: flex;
+}
+#activité-bloc{
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+}
+.activité-titre{
+    font-size: large;
+}
+.activité-bloc-contenu{
+    flex-direction: row;
+    align-content: center;
+}
+.activité-contenu{
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.activité-card{
+    height: 420px;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px #C1C1C1;
+    margin-bottom: 25px;
+}
+.activité-image{
+    height: 370px;
+    width: 120%;
+    object-fit: cover;
+}
+.activité-card-description{
+    background-color: white;
+    width: 100%;
+}
+.activité-titre-card{
+    margin-top: 5px;
+    font-size: 95%;
+    padding: 5px 5px 5px 10px;
+}
+.more {
+    padding-left: 30px;
+    padding-bottom: 32.5px;
+    font-size: 18px;
+}
+footer {
+    display: flex;
+}
+.footer{
+    display: flex;
+    background-color: #F2F2F2;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1340px;
+    height: 163px;
+    margin-top: 35px;
+}
+.footer-nav{
+    margin-right: 150px;
+}
+footer nav li {
+    margin-top: 10px;
+    list-style-type:none;
+}
+footer nav li a {
+    text-decoration: none;
+    color: black;
+}
+.strong {
+    font-size:18px;
+    font-weight: 700;
 }
