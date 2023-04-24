@@ -72,13 +72,15 @@ form{
     border-bottom-left-radius: 15px;
     border: 2px #F2F2F2 solid;
 }
+
 .mots-rechercher{
     padding: 10px 10px 10px 10px;
     border-style: none;
     border: 2px #F2F2F2 solid;
     font-weight: bold;
 }
-.bouton{
+
+.bouton {
     padding: 10px 10px 10px 10px;
     border-style: none;
     border: 2px #0065fc solid;
@@ -87,6 +89,11 @@ form{
     background-color: #0065fc;
     color: white;
 }
+
+.bouton-mobile {
+    display: none;
+}
+
 .box-filtres{
     align-items: center;
     display:flex;
@@ -111,8 +118,8 @@ form{
     border-color:#D9D9D9;
 }
 .filtre-and-icone > a {
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 .filter_icon{
     color: #0065fc;
@@ -213,7 +220,6 @@ color: black;
 .contenu-bloc-populaires{
     flex-direction: column;
     align-items: center;
-
 }
 .populaire-card{
     flex-direction: row;
@@ -323,7 +329,8 @@ footer {
     margin-top: 35px;
 }
 .footer-nav{
-    margin-right: 150px;
+    margin-right:30px;
+    flex:1 1 0px;
 }
 footer nav li {
     margin-top: 10px;
@@ -394,13 +401,152 @@ footer nav li a {
     }
     .contenu-bloc-populaires{
         flex-direction: row;
-        justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-.footer-nav {
-    margin-right: 30px;
-    width: 288px;
-    height: 163px;
+    .populaire-card{
+        width:28%;
+    }
 }
+@media screen and (max-width: 768px)
+{
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    header img{
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    header nav ul li{
+        display: flex;
+        padding-right: 0px;
+        width: 100%;
+        margin:0;
+    }
+    header nav a{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 3px #F2F2F2 solid;
+        width: 100%;
+    }
+    header nav a:hover{
+        border-bottom: 3px #0065fc solid;
+        border-top: 0px;
+        padding-top: 0px;
+    }
+    .entête{
+        width: 90%;
+        margin: auto;
+    }
+    .search_icon{
+        background-color: #F2F2F2;
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px #F2F2F2 solid;
+    }
+    .barre-de-recherche{
+        padding: 10px 10px 10px 10px;
+        border-style: none;
+        border: 2px #F2F2F2 solid;
+    }
+
+    .bouton-mobile {
+        display: block;
+    }
+    .bouton-search {
+        display: none;
+    }
+
+    .box-filtres{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    #hebergements-and-populaires{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #bloc-hebergements{
+        width: 90%;
+        background-color: white;
+        margin: auto;
+    }
+    .section-title{
+        padding-left: 0px;
+    }
+    .contenu-bloc-hotel{
+        display: flex;
+        flex-direction: column;
+    }
+    .hotel-card{
+        width: 100%;
+    }
+    .more{
+        padding-left: 0px;
+    }
+    #bloc-populaires{
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+    .populaire-title{
+        font-weight: bold;
+    }
+    .populaire-image{
+        width: 50%;
+    }
+    .populaire-card{
+        width: 90%;
+    }
+    #activité-bloc{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+        margin: auto;
+    }
+    .activité-titre{
+        padding-bottom: 20px;
+    }
+    .activité-bloc-contenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .activité-contenu{
+        width: 100%;
+    }
+    .activité-card{
+        width: 100%;
+        height: 220px;
+    }
+    .activité-image{
+        height: 160px;
+        width: 100%;
+    }
+    .activité-titre-card{
+        box-sizing: border-box;
+        margin-top: 15px;
+        padding-right: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
