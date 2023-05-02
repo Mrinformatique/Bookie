@@ -120,6 +120,8 @@ form{
 .filtre-and-icone > a {
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
 }
 .filter_icon{
     color: #0065fc;
@@ -371,7 +373,8 @@ footer nav li a {
     }
     .activité-bloc-contenu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-content: center;
 
         width: 100%;
     }
@@ -424,19 +427,21 @@ footer nav li a {
     }
     header nav{
         width: 100%;
+        font-size: 17px;
+        line-height: 19px;
+        text-align: center;
+        padding-bottom: 18px;
     }
     header nav ul{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
+
     }
     header nav ul li{
         display: flex;
-        padding-right: 0px;
         width: 100%;
         margin:0;
+        border-top:none;
     }
     header nav a{
         display: flex;
@@ -447,12 +452,20 @@ footer nav li a {
     }
     header nav a:hover{
         border-bottom: 3px #0065fc solid;
-        border-top: 0px;
-        padding-top: 0px;
+    }
+    main {
+        padding: 0px 20px 0px 20px;
+    }
+    .formulaire{
+        padding:0;
+    }
+    .info-logements{
+        padding: 0;
     }
     .entête{
-        width: 90%;
+        width: auto;
         margin: auto;
+        padding:0;
     }
     .search_icon{
         background-color: #F2F2F2;
@@ -478,15 +491,33 @@ footer nav li a {
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
+    .modele-de-filtre{
+        display:grid;
+        grid-template-columns: 60% 60%;
+        grid-gap: 10px 20px;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .filtre-and-icone{
+        width:100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
     #hebergements-and-populaires{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        padding: 0;
+        width: auto;
     }
     #bloc-hebergements{
-        width: 90%;
+        width:auto;
         background-color: white;
-        margin: auto;
+        padding:0 20px 0 20px;
     }
     .section-title{
         padding-left: 0px;
@@ -516,10 +547,9 @@ footer nav li a {
         width: 90%;
     }
     #activité-bloc{
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 90%;
-        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: auto;
     }
     .activité-titre{
         padding-bottom: 20px;
@@ -544,9 +574,10 @@ footer nav li a {
         margin-top: 15px;
         padding-right: 10px;
     }
-    footer{
+    .footer{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        margin:35px 0 0 0;
     }
 }
