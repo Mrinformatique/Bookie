@@ -71,6 +71,7 @@ form{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 2px #F2F2F2 solid;
+    display: flex;
 }
 
 .mots-rechercher{
@@ -506,7 +507,6 @@ footer nav li a {
         display: flex;
         justify-content: center;
     }
-
     #hebergements-and-populaires{
         display: flex;
         flex-direction: column-reverse;
